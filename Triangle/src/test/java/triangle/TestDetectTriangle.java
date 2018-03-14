@@ -31,9 +31,6 @@ public class TestDetectTriangle {
     public Object[][] rectangularIsoscelesProviderData() {
         return new Object[][]
                 {
-                        { new Double(7), new Double(7), Math.sqrt(7*7 + 7*7) },
-                        { new Double(7), Math.sqrt(7*7 + 7*7), new Double(7)},
-                        { Math.sqrt(7*7 + 7*7), new Double(7), new Double(7)},
                         { new Double(3), new Double(3), Math.sqrt(3*3 + 3*3) },
                         { new Double(3), Math.sqrt(3*3 + 3*3), new Double(3)},
                         { Math.sqrt(3*3 + 3*3), new Double(3), new Double(3)},

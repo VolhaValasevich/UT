@@ -9,7 +9,8 @@ public class Main {
 
 		//double a = Double.MAX_VALUE * 10;
 		//System.out.println(a);
-		Triangle tr = new Triangle(new Double(5), new Double(5), Math.round(Math.sqrt(5*5 + 5*5)));
+		int a = 3;
+		Triangle tr = new Triangle(a, 4.2, 3.1);
 		System.out.println(tr.checkTriangle());
 		System.out.println(tr.getMessage());
 		System.out.println(tr.detectTriangle());

@@ -20,13 +20,14 @@ public class TestCheckTriangle {
                 };
     }
 
-    @DataProvider(name = "oneSideNullProvider")
-    public Object[][] oneSideNullProviderData() {
+    @DataProvider(name = "nullSideProvider")
+    public Object[][] nullSideProviderData() {
         return new Object[][]
                 {
                         { new Integer(0), new Integer(1), new Integer(1), "a<=0"},
                         { new Integer(1), new Integer(0), new Integer(1), "b<=0"},
                         { new Integer(1), new Integer(1), new Integer(0), "c<=0"},
+                        { new Integer(0), new Integer(0), new Integer(0), "a<=0"},
                 };
     }
 
@@ -68,8 +69,8 @@ public class TestCheckTriangle {
                 "[" + this.triangle.getMessage() + "], expected: ["+expected_message+"]]");
     }
 
-    @Test(dataProvider = "oneSideNullProvider")
-    public void tstOneSideNullTriangle(Integer side_a, Integer side_b, Integer side_c, String expected_message)
+    @Test(dataProvider = "nullSideProvider")
+    public void tstnullSideTriangle(Integer side_a, Integer side_b, Integer side_c, String expected_message)
     {
         this.triangle = new Triangle(side_a, side_b, side_c);
         Assert.assertEquals(this.triangle.checkTriangle(), false, "[Triangle confirmation" +

@@ -12,16 +12,11 @@ public class TestCalculatingSquare {
     public Object[][] correctTriangleProviderData() {
         return new Object[][]
                 {
-                        { 2, 4, 5, 3.7997},
-                        { 5.5, 3.5, 2.2, 1.9996},
-                        { 5, 3.5, 2.2, 3.3033},
-                        { 5.5, 3, 2.6, 1.4448},
-                        { 5.5, 3.5, 3, 4.7434},
-                        /*{ new Double(2), new Double(4), new Double(5), new Double(3.7997)},
+                        { new Integer(2), new Integer(4), new Integer(5), new Double(3.7997)},
                         { new Double(5.5), new Double(3.5), new Double(2.2), new Double(1.9996)},
-                        { new Double(5), new Double(3.5), new Double(2.2), new Double(3.3033)},
-                        { new Double(5.5), new Double(3), new Double(2.6), new Double(1.4448)},
-                        { new Double(5.5), new Double(3.5), new Double(3), new Double(4.7434)},*/
+                        { new Integer(5), new Double(3.5), new Double(2.2), new Double(3.3033)},
+                        { new Double(5.5), new Integer(3), new Double(2.6), new Double(1.4448)},
+                        { new Double(5.5), new Double(3.5), new Integer(3), new Double(4.7434)},
                 };
     }
 
